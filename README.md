@@ -27,9 +27,9 @@
 
 ## Link(s):
 
-[Github-Repo]()
+[Github-Repo](https://github.com/mkheck13/EnRNG)
 
-[Vercel]()
+[Vercel](https://en-rng.vercel.app/)
 
 ## Notes:
 - 
