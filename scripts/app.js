@@ -37,7 +37,7 @@ addNameBtn.addEventListener('click', () => {
     remove.textContent = "Remove";
     remove.className = "text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700";
 
-    div.className = "flex justify-between p-5";
+    div.className = "flex justify-evenly p-5";
 
     remove.addEventListener('click', () => {
         let index = nameArr.indexOf(p.textContent);
@@ -86,7 +86,7 @@ groupBtn.addEventListener('click', () => {
 
     if(nameArr.length < groupSizeSlider.value){
         noNameMessage.textContent = "You can not make a group larger than the amount of names added";
-        noNameMessage.className = "text-black";
+        noNameMessage.className = "text-white";
         modalBody.append(noNameMessage);
     }else{
         let newArr = nameArr;
@@ -113,8 +113,8 @@ groupBtn.addEventListener('click', () => {
             }else{
                 let group = document.createElement('p');
 
-                group.textContent = `Team #${i}: ${results[i]}`;
-                group.className = "text-black text-2xl"
+                group.textContent = `Team #${i + 1}: ${results[i]}`;
+                group.className = "text-white text-2xl"
                 modalBody.append(group);
             }
         }

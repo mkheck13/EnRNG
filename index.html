@@ -16,15 +16,15 @@
         </div>
 
         <!-- input and buttons -->
-         <div>
+         <div class="columns-3 flex justify-evenly mt-12">
             <!-- Name Input & Button to Add -->
             <div>
-                <input id="nameInput" type="text" placeholder="Enter Name">
+                <input class="rounded-lg" id="nameInput" type="text" placeholder="Enter Name">
                 <button id="addNameBtn" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Add Name</button>
             </div>
             <!-- Random Button and Field For Name -->
              <div>
-                <p id="displayRandomname">Random Name here</p>
+                <p class="text-2xl" id="displayRandomname">Random Name here</p>
                 <button id="randomNameBtn" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Random Name</button>
              </div>
              <!-- Sliders for size of groups and how many groups and button -->
@@ -69,24 +69,11 @@
 
          <!-- Area to show the current names and remove them -->
           <div>
-            <div>
-                <p id="totalNames">Current Names:</p>
+            <div class="text-center text-2xl">
+                <p id="totalNames">Current Names: 0</p>
             </div>
-            <div id="namesDiv">names appear here</div>
+            <div class="text-center" id="namesDiv"></div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
     
