@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="./src/output.css" rel="stylesheet" />
     <title>Enhanced Random Name Generator</title>
 </head>
+
 <body class="bg-amber-800">
 
     <div class="mt-20">
@@ -16,45 +18,62 @@
         </div>
 
         <!-- input and buttons -->
-         <div class="columns-3 flex justify-evenly mt-12">
+        <div class="columns-4 flex justify-evenly mt-12">
             <!-- Name Input & Button to Add -->
             <div>
                 <input class="rounded-lg" id="nameInput" type="text" placeholder="Enter Name">
-                <button id="addNameBtn" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Add Name</button>
+                <button id="addNameBtn" type="button"
+                    class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Add
+                    Name</button>
             </div>
             <!-- Random Button and Field For Name -->
-             <div>
+            <div>
                 <p class="text-2xl" id="displayRandomname">Random Name here</p>
-                <button id="randomNameBtn" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Random Name</button>
-             </div>
+                <button id="randomNameBtn" type="button"
+                    class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Random
+                    Name</button>
+            </div>
+           
+
+        </div>
+
+        <div>
              <!-- Sliders for size of groups and how many groups and button -->
-              <div>
-                <div>
+             <div class="text-center my-6">
+                <div class="flex justify-center">
                     <label for="groupCount">Number of Groups</label>
-                    <input type="range" name="groupCount" id="groupCountSlider" min="1" max="10" value="1" required>
+                    <input class="mx-2" type="range" name="groupCount" id="groupCountSlider" min="1" max="10" value="1" required>
                     <p id="groupCountValue">1</p>
                 </div>
-                <div>
+                <div class="flex justify-center">
                     <label for="groupSize">Size of Groups</label>
-                    <input type="range" name="groupSize" id="groupSizeSlider" min="2" max="10" value="2" required>
+                    <input class="mx-2" type="range" name="groupSize" id="groupSizeSlider" min="2" max="10" value="2" required>
                     <p id="groupSizeValue">2</p>
                 </div>
-                <button id="groupBtn" data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Groups</button>
-              </div>
+                <button id="groupBtn" data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                    class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get
+                    Groups</button>
+            </div>
 
-              <!-- Modal for showing groups -->
-              <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <!-- Modal for showing groups -->
+            <div id="default-modal" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative p-4 w-full max-w-2xl max-h-full">
-                    
+
                     <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        
-                        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+
+                        <div
+                            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                                 Groups
                             </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
-                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                data-modal-hide="default-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                 </svg>
                                 <span class="sr-only">Close modal</span>
                             </button>
@@ -64,20 +83,19 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-         </div>
-
-         <!-- Area to show the current names and remove them -->
-          <div>
+        <!-- Area to show the current names and remove them -->
+        <div>
             <div class="text-center text-2xl">
                 <p id="totalNames">Current Names: 0</p>
             </div>
             <div class="text-center" id="namesDiv"></div>
-          </div>
+        </div>
 
     </div>
-    
-    
+
+
 
 
 
@@ -87,4 +105,5 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script type="module" src="./scripts/app.js"></script>
 </body>
+
 </html>

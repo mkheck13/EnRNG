@@ -554,11 +554,20 @@
   .z-50 {
     z-index: 50;
   }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
+  }
   .ms-auto {
     margin-inline-start: auto;
   }
   .me-2 {
     margin-inline-end: calc(var(--spacing) * 2);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -620,8 +629,14 @@
   .resize {
     resize: both;
   }
+  .columns-2 {
+    columns: 2;
+  }
   .columns-3 {
     columns: 3;
+  }
+  .columns-4 {
+    columns: 4;
   }
   .items-center {
     align-items: center;
@@ -634,6 +649,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {

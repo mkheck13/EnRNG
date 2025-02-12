@@ -133,3 +133,9 @@ const shuffle = (arr) => {
     }
     return arr;
 };
+
+// Local storage
+// function isSaved(nameInput){
+//     const saved = GetLocal();
+//     return saved.includes(nameInput)
+// };

@@ -25,10 +25,12 @@ const RemoveLocal = (isName) => {
     let names = GetLocal();
     let index = names.indexOf(isName);
 
-    names.splice(index, 1);
+    if(index !== -1){
+        names.splice(index, 1);
 
-    console.log(names);
-    localStorage.setItem("Names", JSON.stringify(names))
+        console.log(names);
+        localStorage.setItem("Names", JSON.stringify(names))     
+    }
 };
 
 // Exports
